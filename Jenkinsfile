@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    node('master')
+    node('master || built-in')
   }
   stages {
     stage('Log hard drives status') {
